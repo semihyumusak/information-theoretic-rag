@@ -1,0 +1,11 @@
+*.zip
+*.pdf
+*.pdf
+*.gz
+/ACCESS_latex_template_20240429
+/ACCESS_latex_template_20240429
+/figures
+/figures
+*.tex
+/src/pipeline/__pycache__
+*.json

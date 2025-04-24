@@ -31,7 +31,7 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn tqdm
 
 ## Project Structure
 
-- `information_theoretic_rag.py`: The main simulation framework
+- `main.py`: The main simulation framework
 - `results/`: Raw experimental results in JSON format
 - `figures/`: Generated figures in PNG and PDF formats
 - `tables/`: Generated tables in CSV and LaTeX formats
@@ -43,7 +43,7 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn tqdm
 To run all experiments:
 
 ```bash
-python information_theoretic_rag.py --experiment all
+python src/main.py --experiment all
 ```
 
 This will:
@@ -56,10 +56,10 @@ This will:
 To run specific experiments:
 
 ```bash
-python information_theoretic_rag.py --experiment channel_capacity
-python information_theoretic_rag.py --experiment bottleneck
-python information_theoretic_rag.py --experiment error_propagation
-python information_theoretic_rag.py --experiment schema_entropy
+python src/main.py --experiment channel_capacity
+python src/main.py --experiment bottleneck
+python src/main.py --experiment error_propagation
+python src/main.py --experiment schema_entropy
 ```
 
 ### Generating Figures from Existing Results
@@ -67,7 +67,7 @@ python information_theoretic_rag.py --experiment schema_entropy
 If you've already run the experiments and just want to regenerate the figures:
 
 ```bash
-python information_theoretic_rag.py --figures_only
+python src/main.py --figures_only
 ```
 
 ## Experiments
@@ -130,21 +130,33 @@ You can customize the experimental parameters by modifying the constants in each
 - Schema entropy levels
 - Number of synthetic queries and database records
 
-## Citation
+[//]: # (## Citation)
 
-If you use this framework in your research, please cite our paper:
+[//]: # ()
+[//]: # (If you use this framework in your research, please cite our paper:)
 
-```bibtex
-@article{author2025information,
-  title={Information-Theoretic Analysis of Retrieval-Augmented Generation in Database Systems},
-  author={Author, A.},
-  journal={Journal of Database Research},
-  year={2025},
-  volume={X},
-  number={X},
-  pages={XXX--XXX}
-}
-```
+[//]: # ()
+[//]: # (```bibtex)
+
+[//]: # (@article{yumusak2025,)
+
+[//]: # (  title={Information-Theoretic Analysis of Retrieval-Augmented Generation in Database Systems},)
+
+[//]: # (  author={Yumusak, S.},)
+
+[//]: # (  journal={???},)
+
+[//]: # (  year={2025},)
+
+[//]: # (  volume={X},)
+
+[//]: # (  number={X},)
+
+[//]: # (  pages={XXX--XXX})
+
+[//]: # (})
+
+[//]: # (```)
 
 ## License
 
