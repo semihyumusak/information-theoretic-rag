@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\caption{Accuracy Drop from Single-Channel Errors}
+\label{tab:error_single}
+\begin{tabular}{lccc}
+\toprule
+Channel & Error 0.1 & Error 0.2 & Error 0.3 \\
+\midrule
+C₁ & -0.0305 & -0.1096 & -0.1256 \\
+C₂ & 0.0684 & 0.1798 & 0.2546 \\
+C₃ & 0.0004 & -0.0004 & -0.0017 \\
+C₄ & 0.0423 & 0.0850 & 0.1302 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Interaction Effects Between Channels with Error Level 0.2}
+\label{tab:error_multi}
+\begin{tabular}{lcccc}
+\toprule
+Channel Pair & Actual Drop & Expected Drop & Interaction Effect & Ratio \\
+\midrule
+C1+C2 & 0.0582 & 0.0702 & -0.0120 & -0.17 \\
+C1+C3 & -0.1080 & -0.1100 & 0.0020 & -0.02 \\
+C1+C4 & -0.0024 & -0.0246 & 0.0221 & -0.90 \\
+C2+C3 & 0.1799 & 0.1795 & 0.0004 & 0.00 \\
+C2+C4 & 0.2356 & 0.2649 & -0.0293 & -0.11 \\
+C3+C4 & 0.0850 & 0.0847 & 0.0004 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

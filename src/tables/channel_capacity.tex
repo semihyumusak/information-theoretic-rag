@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\caption{Channel Capacity Measurements Under Varying Conditions}
+\label{tab:channel_capacity}
+\begin{tabular}{llcc}
+\toprule
+Channel & Parameter & Value & Capacity (bits) \\
+\midrule
+C₁: Query Encoding & Embedding Dimension & 64.0 & 2.08 \\
+ & Embedding Dimension & 128.0 & 2.05 \\
+ & Embedding Dimension & 256.0 & 2.01 \\
+ & Embedding Dimension & 512.0 & 1.77 \\
+ & Embedding Dimension & 1024.0 & 1.80 \\
+C₂: Retrieval & Context Size & 2.0 & 1.86 \\
+ & Context Size & 4.0 & 1.84 \\
+ & Context Size & 8.0 & 1.87 \\
+ & Context Size & 16.0 & 1.62 \\
+ & Context Size & 32.0 & 1.73 \\
+C₃: Context Integration & Context Size & 2.0 & 1.54 \\
+ & Context Size & 4.0 & 1.68 \\
+ & Context Size & 8.0 & 1.41 \\
+ & Context Size & 16.0 & 1.47 \\
+ & Context Size & 32.0 & 1.55 \\
+C₄: Generation & Temperature & 0.1 & 1.23 \\
+ & Temperature & 0.3 & 1.45 \\
+ & Temperature & 0.5 & 1.94 \\
+ & Temperature & 0.7 & 1.73 \\
+ & Temperature & 0.9 & 1.62 \\
+\bottomrule
+\end{tabular}
+\end{table}

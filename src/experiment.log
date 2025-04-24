@@ -1,0 +1,538 @@
+2025-04-24 00:46:54,569 - experiments.experiment_runner - INFO - Experiment runner initialized with output directory: .
+2025-04-24 00:46:54,569 - experiments.experiment_runner - INFO - Running all experiments
+2025-04-24 00:46:54,569 - experiments.channel_capacity - INFO - Starting channel capacity experiment
+2025-04-24 00:46:54,571 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:46:54,598 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:46:54,747 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:46:54,768 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:46:54,768 - experiments.channel_capacity - INFO - Measuring C₁: Query Encoding Channel capacity
+2025-04-24 00:46:54,809 - experiments.channel_capacity - INFO - C1 capacity with dim=64: 2.0789 bits
+2025-04-24 00:46:54,828 - experiments.channel_capacity - INFO - C1 capacity with dim=128: 2.0496 bits
+2025-04-24 00:46:54,850 - experiments.channel_capacity - INFO - C1 capacity with dim=256: 2.0109 bits
+2025-04-24 00:46:54,878 - experiments.channel_capacity - INFO - C1 capacity with dim=512: 1.8571 bits
+2025-04-24 00:46:54,916 - experiments.channel_capacity - INFO - C1 capacity with dim=1024: 1.7827 bits
+2025-04-24 00:46:54,917 - experiments.channel_capacity - INFO - Measuring C₂: Retrieval Channel capacity
+2025-04-24 00:46:54,917 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:46:54,942 - experiments.channel_capacity - INFO - C2 capacity with context_size=2: 1.8636 bits
+2025-04-24 00:46:54,961 - experiments.channel_capacity - INFO - C2 capacity with context_size=4: 1.8378 bits
+2025-04-24 00:46:54,984 - experiments.channel_capacity - INFO - C2 capacity with context_size=8: 1.8699 bits
+2025-04-24 00:46:55,004 - experiments.channel_capacity - INFO - C2 capacity with context_size=16: 1.6188 bits
+2025-04-24 00:46:55,024 - experiments.channel_capacity - INFO - C2 capacity with context_size=32: 1.7252 bits
+2025-04-24 00:46:55,024 - experiments.channel_capacity - INFO - Measuring C₃: Context Integration Channel capacity
+2025-04-24 00:46:55,049 - experiments.channel_capacity - INFO - C3 capacity with context_size=2: 1.5353 bits
+2025-04-24 00:46:55,076 - experiments.channel_capacity - INFO - C3 capacity with context_size=4: 1.6794 bits
+2025-04-24 00:46:55,110 - experiments.channel_capacity - INFO - C3 capacity with context_size=8: 1.4102 bits
+2025-04-24 00:46:55,158 - experiments.channel_capacity - INFO - C3 capacity with context_size=16: 1.4684 bits
+2025-04-24 00:46:55,203 - experiments.channel_capacity - INFO - C3 capacity with context_size=32: 1.5502 bits
+2025-04-24 00:46:55,204 - experiments.channel_capacity - INFO - Measuring C₄: Generation Channel capacity
+2025-04-24 00:46:55,237 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.1: 1.2329 bits
+2025-04-24 00:46:55,268 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.3: 1.4514 bits
+2025-04-24 00:46:55,299 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.5: 1.9381 bits
+2025-04-24 00:46:55,331 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.7: 1.7316 bits
+2025-04-24 00:46:55,362 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.9: 1.6184 bits
+2025-04-24 00:46:55,366 - experiments.channel_capacity - INFO - Channel capacity experiment completed
+2025-04-24 00:46:55,366 - experiments.channel_capacity - INFO - Results saved to ./results/channel_capacity.json
+2025-04-24 00:46:55,367 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:46:57,720 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:46:57,720 - experiments.experiment_runner - WARNING - No bottleneck analysis results to plot
+2025-04-24 00:46:57,720 - experiments.experiment_runner - WARNING - No error propagation results to plot
+2025-04-24 00:46:57,720 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:46:57,720 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:46:57,720 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:46:57,736 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:46:57,736 - experiments.experiment_runner - WARNING - No bottleneck analysis results to tabulate
+2025-04-24 00:46:57,736 - experiments.experiment_runner - WARNING - No error propagation results to tabulate
+2025-04-24 00:46:57,737 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:46:57,737 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:46:57,737 - experiments.bottleneck_analysis - INFO - Starting bottleneck analysis experiment
+2025-04-24 00:46:57,737 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:46:57,737 - experiments.bottleneck_analysis - INFO - Generating database content
+2025-04-24 00:46:57,761 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:46:57,851 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:46:57,851 - experiments.bottleneck_analysis - INFO - Generating queries
+2025-04-24 00:46:57,871 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:46:57,871 - experiments.bottleneck_analysis - INFO - Encoding database
+2025-04-24 00:46:57,872 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:46:57,877 - experiments.bottleneck_analysis - INFO - Running baseline experiment
+2025-04-24 00:46:57,905 - experiments.bottleneck_analysis - INFO - Baseline end-to-end accuracy: 0.2143
+2025-04-24 00:46:57,905 - experiments.bottleneck_analysis - INFO - Testing improvements to C₁: Query Encoding Channel
+2025-04-24 00:46:57,939 - experiments.bottleneck_analysis - INFO - C1 improved by 1.5x: accuracy=0.2094, improvement=-2.31%
+2025-04-24 00:46:57,973 - experiments.bottleneck_analysis - INFO - C1 improved by 2.0x: accuracy=0.2132, improvement=-0.53%
+2025-04-24 00:46:57,973 - experiments.bottleneck_analysis - INFO - Testing improvements to C₂: Retrieval Channel
+2025-04-24 00:46:58,008 - experiments.bottleneck_analysis - INFO - C2 improved by 1.5x: accuracy=0.3384, improvement=57.86%
+2025-04-24 00:46:58,048 - experiments.bottleneck_analysis - INFO - C2 improved by 2.0x: accuracy=0.3956, improvement=84.56%
+2025-04-24 00:46:58,048 - experiments.bottleneck_analysis - INFO - Testing improvements to C₃: Context Integration Channel
+2025-04-24 00:46:58,076 - experiments.bottleneck_analysis - INFO - C3 improved by 1.5x: accuracy=0.2356, improvement=9.92%
+2025-04-24 00:46:58,105 - experiments.bottleneck_analysis - INFO - C3 improved by 2.0x: accuracy=0.2337, improvement=9.04%
+2025-04-24 00:46:58,105 - experiments.bottleneck_analysis - INFO - Testing improvements to C₄: Generation Channel
+2025-04-24 00:46:58,134 - experiments.bottleneck_analysis - INFO - C4 improved by 1.5x: accuracy=0.3392, improvement=58.25%
+2025-04-24 00:46:58,162 - experiments.bottleneck_analysis - INFO - C4 improved by 2.0x: accuracy=0.4504, improvement=110.13%
+2025-04-24 00:46:58,164 - experiments.bottleneck_analysis - INFO - Bottleneck analysis experiment completed
+2025-04-24 00:46:58,164 - experiments.bottleneck_analysis - INFO - Results saved to ./results/bottleneck_analysis.json
+2025-04-24 00:46:58,166 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:46:59,629 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:47:00,068 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:47:00,068 - experiments.experiment_runner - WARNING - No error propagation results to plot
+2025-04-24 00:47:00,068 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:47:00,068 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:47:00,068 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:47:00,078 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:47:00,088 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:47:00,088 - experiments.experiment_runner - WARNING - No error propagation results to tabulate
+2025-04-24 00:47:00,088 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:47:00,088 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:47:00,088 - experiments.error_propagation - INFO - Starting error propagation experiment
+2025-04-24 00:47:00,089 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:47:00,089 - experiments.error_propagation - INFO - Generating database content
+2025-04-24 00:47:00,105 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:00,188 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:47:00,188 - experiments.error_propagation - INFO - Generating queries
+2025-04-24 00:47:00,209 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:00,209 - experiments.error_propagation - INFO - Encoding database
+2025-04-24 00:47:00,210 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:00,215 - experiments.error_propagation - INFO - Running baseline experiment (no errors)
+2025-04-24 00:47:00,242 - experiments.error_propagation - INFO - Baseline end-to-end accuracy (no errors): 0.4824
+2025-04-24 00:47:00,242 - experiments.error_propagation - INFO - Testing single-channel errors
+2025-04-24 00:47:00,242 - experiments.error_propagation - INFO - Testing C₁ errors: Query Encoding
+2025-04-24 00:47:00,274 - experiments.error_propagation - INFO - C1 error=0.1: accuracy=0.5129, drop=-0.0305
+2025-04-24 00:47:00,306 - experiments.error_propagation - INFO - C1 error=0.2: accuracy=0.5920, drop=-0.1096
+2025-04-24 00:47:00,339 - experiments.error_propagation - INFO - C1 error=0.3: accuracy=0.6079, drop=-0.1256
+2025-04-24 00:47:00,339 - experiments.error_propagation - INFO - Testing C₂ errors: Retrieval
+2025-04-24 00:47:00,365 - experiments.error_propagation - INFO - C2 error=0.1: accuracy=0.4140, drop=0.0684
+2025-04-24 00:47:00,389 - experiments.error_propagation - INFO - C2 error=0.2: accuracy=0.3025, drop=0.1798
+2025-04-24 00:47:00,410 - experiments.error_propagation - INFO - C2 error=0.3: accuracy=0.2277, drop=0.2546
+2025-04-24 00:47:00,410 - experiments.error_propagation - INFO - Testing C₃ errors: Context Integration
+2025-04-24 00:47:00,437 - experiments.error_propagation - INFO - C3 error=0.1: accuracy=0.4820, drop=0.0004
+2025-04-24 00:47:00,464 - experiments.error_propagation - INFO - C3 error=0.2: accuracy=0.4827, drop=-0.0004
+2025-04-24 00:47:00,491 - experiments.error_propagation - INFO - C3 error=0.3: accuracy=0.4840, drop=-0.0017
+2025-04-24 00:47:00,491 - experiments.error_propagation - INFO - Testing C₄ errors: Generation
+2025-04-24 00:47:00,519 - experiments.error_propagation - INFO - C4 error=0.1: accuracy=0.4400, drop=0.0423
+2025-04-24 00:47:00,546 - experiments.error_propagation - INFO - C4 error=0.2: accuracy=0.3973, drop=0.0850
+2025-04-24 00:47:00,573 - experiments.error_propagation - INFO - C4 error=0.3: accuracy=0.3521, drop=0.1302
+2025-04-24 00:47:00,573 - experiments.error_propagation - INFO - Testing multi-channel errors (pair-wise)
+2025-04-24 00:47:00,602 - experiments.error_propagation - INFO - C1+C2 error=0.2: accuracy=0.4242, drop=0.0582, interaction=-0.0120
+2025-04-24 00:47:00,634 - experiments.error_propagation - INFO - C1+C3 error=0.2: accuracy=0.5903, drop=-0.1080, interaction=0.0020
+2025-04-24 00:47:00,666 - experiments.error_propagation - INFO - C1+C4 error=0.2: accuracy=0.4848, drop=-0.0024, interaction=0.0221
+2025-04-24 00:47:00,689 - experiments.error_propagation - INFO - C2+C3 error=0.2: accuracy=0.3025, drop=0.1799, interaction=0.0004
+2025-04-24 00:47:00,713 - experiments.error_propagation - INFO - C2+C4 error=0.2: accuracy=0.2468, drop=0.2356, interaction=-0.0293
+2025-04-24 00:47:00,741 - experiments.error_propagation - INFO - C3+C4 error=0.2: accuracy=0.3973, drop=0.0850, interaction=0.0004
+2025-04-24 00:47:00,744 - experiments.error_propagation - INFO - Error propagation experiment completed
+2025-04-24 00:47:00,744 - experiments.error_propagation - INFO - Results saved to ./results/error_propagation.json
+2025-04-24 00:47:00,745 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:47:02,274 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:47:02,696 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:47:03,506 - experiments.experiment_runner - INFO - Generated error propagation figure: ./figures/error_propagation.png
+2025-04-24 00:47:03,506 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:47:03,507 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:47:03,507 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:47:03,519 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:47:03,526 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:47:03,533 - experiments.experiment_runner - INFO - Generated error propagation tables: ./tables/error_single_channel.csv
+2025-04-24 00:47:03,533 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:47:03,533 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:47:03,533 - experiments.schema_entropy - INFO - Starting schema entropy experiment
+2025-04-24 00:47:03,534 - experiments.schema_entropy - INFO - Testing schema with entropy=2.0 bits
+2025-04-24 00:47:03,534 - data.schema_generator - INFO - Generated schema with target entropy 2.0 bits, achieved 3.32 bits
+2025-04-24 00:47:03,547 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:03,555 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:03,555 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:47:03,558 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:47:03,568 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:47:03,569 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:47:03,572 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:47:03,583 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:47:03,583 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:47:03,589 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:47:03,601 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:47:03,601 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:47:03,610 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:47:03,624 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:47:03,624 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:47:03,642 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:47:03,662 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:47:03,662 - experiments.schema_entropy - INFO - Testing schema with entropy=4.0 bits
+2025-04-24 00:47:03,662 - data.schema_generator - INFO - Generated schema with target entropy 4.0 bits, achieved 5.75 bits
+2025-04-24 00:47:03,675 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:03,740 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:47:03,749 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:03,749 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:47:03,752 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:03,765 - experiments.schema_entropy - INFO -   Results: accuracy=0.2044, precision=0.2625, recall=0.6083, bound=4.0000
+2025-04-24 00:47:03,765 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:47:03,769 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:03,783 - experiments.schema_entropy - INFO -   Results: accuracy=0.2764, precision=0.2775, recall=0.6883, bound=4.0000
+2025-04-24 00:47:03,783 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:47:03,789 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:03,803 - experiments.schema_entropy - INFO -   Results: accuracy=0.2683, precision=0.2925, recall=0.7050, bound=4.0000
+2025-04-24 00:47:03,803 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:47:03,813 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:03,831 - experiments.schema_entropy - INFO -   Results: accuracy=0.2528, precision=0.2775, recall=0.6483, bound=4.0000
+2025-04-24 00:47:03,831 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:47:03,850 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:47:03,874 - experiments.schema_entropy - INFO -   Results: accuracy=0.2467, precision=0.2750, recall=0.6450, bound=4.0000
+2025-04-24 00:47:03,875 - experiments.schema_entropy - INFO - Testing schema with entropy=6.0 bits
+2025-04-24 00:47:03,875 - data.schema_generator - INFO - Generated schema with target entropy 6.0 bits, achieved 7.29 bits
+2025-04-24 00:47:03,894 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:03,952 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:47:04,012 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:47:04,021 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:04,021 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:47:04,024 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:47:04,037 - experiments.schema_entropy - INFO -   Results: accuracy=0.2196, precision=0.1800, recall=0.5150, bound=6.0000
+2025-04-24 00:47:04,037 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:47:04,041 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:47:04,054 - experiments.schema_entropy - INFO -   Results: accuracy=0.1692, precision=0.1600, recall=0.4617, bound=6.0000
+2025-04-24 00:47:04,055 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:47:04,060 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:47:04,075 - experiments.schema_entropy - INFO -   Results: accuracy=0.2221, precision=0.1725, recall=0.4883, bound=6.0000
+2025-04-24 00:47:04,075 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:47:04,086 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:47:04,103 - experiments.schema_entropy - INFO -   Results: accuracy=0.2278, precision=0.1800, recall=0.5617, bound=6.0000
+2025-04-24 00:47:04,103 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:47:04,122 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:47:04,146 - experiments.schema_entropy - INFO -   Results: accuracy=0.2198, precision=0.1725, recall=0.5117, bound=6.0000
+2025-04-24 00:47:04,147 - experiments.schema_entropy - INFO - Testing schema with entropy=8.0 bits
+2025-04-24 00:47:04,147 - data.schema_generator - INFO - Generated schema with target entropy 8.0 bits, achieved 8.32 bits
+2025-04-24 00:47:04,166 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:04,230 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:47:04,289 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:47:04,363 - data.db_generator - INFO - Generated 1000 rows for table 'table_3'
+2025-04-24 00:47:04,371 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:04,372 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:47:04,375 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:47:04,389 - experiments.schema_entropy - INFO -   Results: accuracy=0.1729, precision=0.1575, recall=0.4450, bound=6.0000
+2025-04-24 00:47:04,389 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:47:04,393 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:47:04,407 - experiments.schema_entropy - INFO -   Results: accuracy=0.1644, precision=0.1500, recall=0.4233, bound=7.0000
+2025-04-24 00:47:04,407 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:47:04,413 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:47:04,429 - experiments.schema_entropy - INFO -   Results: accuracy=0.1721, precision=0.1375, recall=0.4067, bound=8.0000
+2025-04-24 00:47:04,429 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:47:04,439 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:47:04,457 - experiments.schema_entropy - INFO -   Results: accuracy=0.1617, precision=0.1350, recall=0.3767, bound=8.0000
+2025-04-24 00:47:04,457 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:47:04,476 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:47:04,501 - experiments.schema_entropy - INFO -   Results: accuracy=0.1204, precision=0.0975, recall=0.2850, bound=8.0000
+2025-04-24 00:47:04,502 - experiments.schema_entropy - INFO - Testing schema with entropy=10.0 bits
+2025-04-24 00:47:04,502 - data.schema_generator - INFO - Generated schema with target entropy 10.0 bits, achieved 9.30 bits
+2025-04-24 00:47:04,521 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:47:04,584 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:47:04,648 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:47:04,706 - data.db_generator - INFO - Generated 1000 rows for table 'table_3'
+2025-04-24 00:47:04,766 - data.db_generator - INFO - Generated 1000 rows for table 'table_4'
+2025-04-24 00:47:04,774 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:47:04,774 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:47:04,778 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:47:04,792 - experiments.schema_entropy - INFO -   Results: accuracy=0.0802, precision=0.0775, recall=0.2133, bound=6.0000
+2025-04-24 00:47:04,792 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:47:04,796 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:47:04,811 - experiments.schema_entropy - INFO -   Results: accuracy=0.1077, precision=0.0975, recall=0.2333, bound=7.0000
+2025-04-24 00:47:04,811 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:47:04,817 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:47:04,833 - experiments.schema_entropy - INFO -   Results: accuracy=0.1196, precision=0.1075, recall=0.2883, bound=8.0000
+2025-04-24 00:47:04,833 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:47:04,844 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:47:04,862 - experiments.schema_entropy - INFO -   Results: accuracy=0.1278, precision=0.1075, recall=0.2967, bound=9.0000
+2025-04-24 00:47:04,862 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:47:04,882 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:47:04,908 - experiments.schema_entropy - INFO -   Results: accuracy=0.1311, precision=0.1100, recall=0.3083, bound=10.0000
+2025-04-24 00:47:04,912 - experiments.schema_entropy - INFO - Schema entropy experiment completed
+2025-04-24 00:47:04,912 - experiments.schema_entropy - INFO - Results saved to ./results/schema_entropy.json
+2025-04-24 00:47:04,913 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:47:06,371 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:47:06,798 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:47:07,687 - experiments.experiment_runner - INFO - Generated error propagation figure: ./figures/error_propagation.png
+2025-04-24 00:47:08,715 - experiments.experiment_runner - INFO - Generated schema entropy figure: ./figures/schema_entropy.png
+2025-04-24 00:47:08,715 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:47:08,715 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:47:08,725 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:47:08,729 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:47:08,736 - experiments.experiment_runner - INFO - Generated error propagation tables: ./tables/error_single_channel.csv
+2025-04-24 00:48:01,387 - experiments.experiment_runner - INFO - Experiment runner initialized with output directory: .
+2025-04-24 00:48:01,388 - experiments.experiment_runner - INFO - Running all experiments
+2025-04-24 00:48:01,388 - experiments.channel_capacity - INFO - Starting channel capacity experiment
+2025-04-24 00:48:01,389 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:48:01,415 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:01,513 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:01,534 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:01,534 - experiments.channel_capacity - INFO - Measuring C₁: Query Encoding Channel capacity
+2025-04-24 00:48:01,567 - experiments.channel_capacity - INFO - C1 capacity with dim=64: 2.0789 bits
+2025-04-24 00:48:01,587 - experiments.channel_capacity - INFO - C1 capacity with dim=128: 2.0496 bits
+2025-04-24 00:48:01,609 - experiments.channel_capacity - INFO - C1 capacity with dim=256: 2.0109 bits
+2025-04-24 00:48:01,637 - experiments.channel_capacity - INFO - C1 capacity with dim=512: 1.7744 bits
+2025-04-24 00:48:01,673 - experiments.channel_capacity - INFO - C1 capacity with dim=1024: 1.7985 bits
+2025-04-24 00:48:01,674 - experiments.channel_capacity - INFO - Measuring C₂: Retrieval Channel capacity
+2025-04-24 00:48:01,674 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:01,699 - experiments.channel_capacity - INFO - C2 capacity with context_size=2: 1.8636 bits
+2025-04-24 00:48:01,717 - experiments.channel_capacity - INFO - C2 capacity with context_size=4: 1.8378 bits
+2025-04-24 00:48:01,736 - experiments.channel_capacity - INFO - C2 capacity with context_size=8: 1.8699 bits
+2025-04-24 00:48:01,755 - experiments.channel_capacity - INFO - C2 capacity with context_size=16: 1.6188 bits
+2025-04-24 00:48:01,774 - experiments.channel_capacity - INFO - C2 capacity with context_size=32: 1.7252 bits
+2025-04-24 00:48:01,774 - experiments.channel_capacity - INFO - Measuring C₃: Context Integration Channel capacity
+2025-04-24 00:48:01,797 - experiments.channel_capacity - INFO - C3 capacity with context_size=2: 1.5353 bits
+2025-04-24 00:48:01,825 - experiments.channel_capacity - INFO - C3 capacity with context_size=4: 1.6794 bits
+2025-04-24 00:48:01,861 - experiments.channel_capacity - INFO - C3 capacity with context_size=8: 1.4102 bits
+2025-04-24 00:48:01,907 - experiments.channel_capacity - INFO - C3 capacity with context_size=16: 1.4684 bits
+2025-04-24 00:48:01,952 - experiments.channel_capacity - INFO - C3 capacity with context_size=32: 1.5502 bits
+2025-04-24 00:48:01,952 - experiments.channel_capacity - INFO - Measuring C₄: Generation Channel capacity
+2025-04-24 00:48:01,984 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.1: 1.2329 bits
+2025-04-24 00:48:02,014 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.3: 1.4514 bits
+2025-04-24 00:48:02,045 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.5: 1.9381 bits
+2025-04-24 00:48:02,078 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.7: 1.7316 bits
+2025-04-24 00:48:02,109 - experiments.channel_capacity - INFO - C4 capacity with temperature=0.9: 1.6184 bits
+2025-04-24 00:48:02,112 - experiments.channel_capacity - INFO - Channel capacity experiment completed
+2025-04-24 00:48:02,113 - experiments.channel_capacity - INFO - Results saved to ./results/channel_capacity.json
+2025-04-24 00:48:02,113 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:48:04,032 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:48:04,033 - experiments.experiment_runner - WARNING - No bottleneck analysis results to plot
+2025-04-24 00:48:04,033 - experiments.experiment_runner - WARNING - No error propagation results to plot
+2025-04-24 00:48:04,033 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:48:04,033 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:48:04,033 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:48:04,046 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:48:04,046 - experiments.experiment_runner - WARNING - No bottleneck analysis results to tabulate
+2025-04-24 00:48:04,046 - experiments.experiment_runner - WARNING - No error propagation results to tabulate
+2025-04-24 00:48:04,046 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:48:04,046 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:48:04,046 - experiments.bottleneck_analysis - INFO - Starting bottleneck analysis experiment
+2025-04-24 00:48:04,047 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:48:04,047 - experiments.bottleneck_analysis - INFO - Generating database content
+2025-04-24 00:48:04,071 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:04,161 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:04,161 - experiments.bottleneck_analysis - INFO - Generating queries
+2025-04-24 00:48:04,182 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:04,182 - experiments.bottleneck_analysis - INFO - Encoding database
+2025-04-24 00:48:04,183 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:04,189 - experiments.bottleneck_analysis - INFO - Running baseline experiment
+2025-04-24 00:48:04,217 - experiments.bottleneck_analysis - INFO - Baseline end-to-end accuracy: 0.2143
+2025-04-24 00:48:04,218 - experiments.bottleneck_analysis - INFO - Testing improvements to C₁: Query Encoding Channel
+2025-04-24 00:48:04,251 - experiments.bottleneck_analysis - INFO - C1 improved by 1.5x: accuracy=0.2094, improvement=-2.31%
+2025-04-24 00:48:04,285 - experiments.bottleneck_analysis - INFO - C1 improved by 2.0x: accuracy=0.2132, improvement=-0.53%
+2025-04-24 00:48:04,285 - experiments.bottleneck_analysis - INFO - Testing improvements to C₂: Retrieval Channel
+2025-04-24 00:48:04,321 - experiments.bottleneck_analysis - INFO - C2 improved by 1.5x: accuracy=0.3384, improvement=57.86%
+2025-04-24 00:48:04,362 - experiments.bottleneck_analysis - INFO - C2 improved by 2.0x: accuracy=0.3956, improvement=84.56%
+2025-04-24 00:48:04,362 - experiments.bottleneck_analysis - INFO - Testing improvements to C₃: Context Integration Channel
+2025-04-24 00:48:04,390 - experiments.bottleneck_analysis - INFO - C3 improved by 1.5x: accuracy=0.2356, improvement=9.92%
+2025-04-24 00:48:04,418 - experiments.bottleneck_analysis - INFO - C3 improved by 2.0x: accuracy=0.2337, improvement=9.04%
+2025-04-24 00:48:04,418 - experiments.bottleneck_analysis - INFO - Testing improvements to C₄: Generation Channel
+2025-04-24 00:48:04,447 - experiments.bottleneck_analysis - INFO - C4 improved by 1.5x: accuracy=0.3392, improvement=58.25%
+2025-04-24 00:48:04,477 - experiments.bottleneck_analysis - INFO - C4 improved by 2.0x: accuracy=0.4504, improvement=110.13%
+2025-04-24 00:48:04,479 - experiments.bottleneck_analysis - INFO - Bottleneck analysis experiment completed
+2025-04-24 00:48:04,479 - experiments.bottleneck_analysis - INFO - Results saved to ./results/bottleneck_analysis.json
+2025-04-24 00:48:04,480 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:48:06,005 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:48:06,445 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:48:06,445 - experiments.experiment_runner - WARNING - No error propagation results to plot
+2025-04-24 00:48:06,445 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:48:06,445 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:48:06,446 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:48:06,467 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:48:06,473 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:48:06,473 - experiments.experiment_runner - WARNING - No error propagation results to tabulate
+2025-04-24 00:48:06,473 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:48:06,473 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:48:06,473 - experiments.error_propagation - INFO - Starting error propagation experiment
+2025-04-24 00:48:06,474 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 00:48:06,474 - experiments.error_propagation - INFO - Generating database content
+2025-04-24 00:48:06,491 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:06,575 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:06,575 - experiments.error_propagation - INFO - Generating queries
+2025-04-24 00:48:06,595 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:06,595 - experiments.error_propagation - INFO - Encoding database
+2025-04-24 00:48:06,596 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:06,601 - experiments.error_propagation - INFO - Running baseline experiment (no errors)
+2025-04-24 00:48:06,628 - experiments.error_propagation - INFO - Baseline end-to-end accuracy (no errors): 0.4824
+2025-04-24 00:48:06,628 - experiments.error_propagation - INFO - Testing single-channel errors
+2025-04-24 00:48:06,628 - experiments.error_propagation - INFO - Testing C₁ errors: Query Encoding
+2025-04-24 00:48:06,660 - experiments.error_propagation - INFO - C1 error=0.1: accuracy=0.5129, drop=-0.0305
+2025-04-24 00:48:06,693 - experiments.error_propagation - INFO - C1 error=0.2: accuracy=0.5920, drop=-0.1096
+2025-04-24 00:48:06,727 - experiments.error_propagation - INFO - C1 error=0.3: accuracy=0.6079, drop=-0.1256
+2025-04-24 00:48:06,727 - experiments.error_propagation - INFO - Testing C₂ errors: Retrieval
+2025-04-24 00:48:06,753 - experiments.error_propagation - INFO - C2 error=0.1: accuracy=0.4140, drop=0.0684
+2025-04-24 00:48:06,776 - experiments.error_propagation - INFO - C2 error=0.2: accuracy=0.3025, drop=0.1798
+2025-04-24 00:48:06,798 - experiments.error_propagation - INFO - C2 error=0.3: accuracy=0.2277, drop=0.2546
+2025-04-24 00:48:06,799 - experiments.error_propagation - INFO - Testing C₃ errors: Context Integration
+2025-04-24 00:48:06,826 - experiments.error_propagation - INFO - C3 error=0.1: accuracy=0.4820, drop=0.0004
+2025-04-24 00:48:06,853 - experiments.error_propagation - INFO - C3 error=0.2: accuracy=0.4827, drop=-0.0004
+2025-04-24 00:48:06,880 - experiments.error_propagation - INFO - C3 error=0.3: accuracy=0.4840, drop=-0.0017
+2025-04-24 00:48:06,880 - experiments.error_propagation - INFO - Testing C₄ errors: Generation
+2025-04-24 00:48:06,907 - experiments.error_propagation - INFO - C4 error=0.1: accuracy=0.4400, drop=0.0423
+2025-04-24 00:48:06,934 - experiments.error_propagation - INFO - C4 error=0.2: accuracy=0.3973, drop=0.0850
+2025-04-24 00:48:06,961 - experiments.error_propagation - INFO - C4 error=0.3: accuracy=0.3521, drop=0.1302
+2025-04-24 00:48:06,961 - experiments.error_propagation - INFO - Testing multi-channel errors (pair-wise)
+2025-04-24 00:48:06,991 - experiments.error_propagation - INFO - C1+C2 error=0.2: accuracy=0.4242, drop=0.0582, interaction=-0.0120
+2025-04-24 00:48:07,023 - experiments.error_propagation - INFO - C1+C3 error=0.2: accuracy=0.5903, drop=-0.1080, interaction=0.0020
+2025-04-24 00:48:07,055 - experiments.error_propagation - INFO - C1+C4 error=0.2: accuracy=0.4848, drop=-0.0024, interaction=0.0221
+2025-04-24 00:48:07,078 - experiments.error_propagation - INFO - C2+C3 error=0.2: accuracy=0.3025, drop=0.1799, interaction=0.0004
+2025-04-24 00:48:07,102 - experiments.error_propagation - INFO - C2+C4 error=0.2: accuracy=0.2468, drop=0.2356, interaction=-0.0293
+2025-04-24 00:48:07,130 - experiments.error_propagation - INFO - C3+C4 error=0.2: accuracy=0.3973, drop=0.0850, interaction=0.0004
+2025-04-24 00:48:07,134 - experiments.error_propagation - INFO - Error propagation experiment completed
+2025-04-24 00:48:07,134 - experiments.error_propagation - INFO - Results saved to ./results/error_propagation.json
+2025-04-24 00:48:07,134 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:48:08,715 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:48:09,133 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:48:09,935 - experiments.experiment_runner - INFO - Generated error propagation figure: ./figures/error_propagation.png
+2025-04-24 00:48:09,935 - experiments.experiment_runner - WARNING - No schema entropy results to plot
+2025-04-24 00:48:09,936 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:48:09,936 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:48:09,945 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:48:09,949 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:48:09,956 - experiments.experiment_runner - INFO - Generated error propagation tables: ./tables/error_single_channel.csv
+2025-04-24 00:48:09,956 - experiments.experiment_runner - WARNING - No schema entropy results to tabulate
+2025-04-24 00:48:09,956 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:48:09,956 - experiments.schema_entropy - INFO - Starting schema entropy experiment
+2025-04-24 00:48:09,957 - experiments.schema_entropy - INFO - Testing schema with entropy=2.0 bits
+2025-04-24 00:48:09,957 - data.schema_generator - INFO - Generated schema with target entropy 2.0 bits, achieved 3.32 bits
+2025-04-24 00:48:09,970 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:09,978 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:09,979 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:48:09,981 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:48:09,991 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:48:09,992 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:48:09,995 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:48:10,006 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:48:10,006 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:48:10,013 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:48:10,025 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:48:10,025 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:48:10,037 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:48:10,051 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:48:10,051 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:48:10,069 - pipeline.database_encoder - INFO - Encoded database with 1 tables
+2025-04-24 00:48:10,089 - experiments.schema_entropy - INFO -   Results: accuracy=0.3722, precision=0.4033, recall=0.9400, bound=2.0000
+2025-04-24 00:48:10,089 - experiments.schema_entropy - INFO - Testing schema with entropy=4.0 bits
+2025-04-24 00:48:10,090 - data.schema_generator - INFO - Generated schema with target entropy 4.0 bits, achieved 5.75 bits
+2025-04-24 00:48:10,102 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:10,170 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:10,179 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:10,179 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:48:10,182 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:10,195 - experiments.schema_entropy - INFO -   Results: accuracy=0.2044, precision=0.2625, recall=0.6083, bound=4.0000
+2025-04-24 00:48:10,195 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:48:10,199 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:10,212 - experiments.schema_entropy - INFO -   Results: accuracy=0.2764, precision=0.2775, recall=0.6883, bound=4.0000
+2025-04-24 00:48:10,212 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:48:10,218 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:10,233 - experiments.schema_entropy - INFO -   Results: accuracy=0.2683, precision=0.2925, recall=0.7050, bound=4.0000
+2025-04-24 00:48:10,233 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:48:10,243 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:10,260 - experiments.schema_entropy - INFO -   Results: accuracy=0.2528, precision=0.2775, recall=0.6483, bound=4.0000
+2025-04-24 00:48:10,260 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:48:10,279 - pipeline.database_encoder - INFO - Encoded database with 2 tables
+2025-04-24 00:48:10,303 - experiments.schema_entropy - INFO -   Results: accuracy=0.2467, precision=0.2750, recall=0.6450, bound=4.0000
+2025-04-24 00:48:10,303 - experiments.schema_entropy - INFO - Testing schema with entropy=6.0 bits
+2025-04-24 00:48:10,303 - data.schema_generator - INFO - Generated schema with target entropy 6.0 bits, achieved 7.29 bits
+2025-04-24 00:48:10,322 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:10,380 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:10,443 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:48:10,451 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:10,452 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:48:10,455 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:48:10,469 - experiments.schema_entropy - INFO -   Results: accuracy=0.2196, precision=0.1800, recall=0.5150, bound=6.0000
+2025-04-24 00:48:10,469 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:48:10,472 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:48:10,487 - experiments.schema_entropy - INFO -   Results: accuracy=0.1692, precision=0.1600, recall=0.4617, bound=6.0000
+2025-04-24 00:48:10,487 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:48:10,492 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:48:10,507 - experiments.schema_entropy - INFO -   Results: accuracy=0.2221, precision=0.1725, recall=0.4883, bound=6.0000
+2025-04-24 00:48:10,507 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:48:10,517 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:48:10,535 - experiments.schema_entropy - INFO -   Results: accuracy=0.2278, precision=0.1800, recall=0.5617, bound=6.0000
+2025-04-24 00:48:10,535 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:48:10,554 - pipeline.database_encoder - INFO - Encoded database with 3 tables
+2025-04-24 00:48:10,578 - experiments.schema_entropy - INFO -   Results: accuracy=0.2198, precision=0.1725, recall=0.5117, bound=6.0000
+2025-04-24 00:48:10,578 - experiments.schema_entropy - INFO - Testing schema with entropy=8.0 bits
+2025-04-24 00:48:10,579 - data.schema_generator - INFO - Generated schema with target entropy 8.0 bits, achieved 8.32 bits
+2025-04-24 00:48:10,598 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:10,661 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:10,720 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:48:10,796 - data.db_generator - INFO - Generated 1000 rows for table 'table_3'
+2025-04-24 00:48:10,804 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:10,805 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:48:10,808 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:48:10,821 - experiments.schema_entropy - INFO -   Results: accuracy=0.1729, precision=0.1575, recall=0.4450, bound=6.0000
+2025-04-24 00:48:10,822 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:48:10,825 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:48:10,839 - experiments.schema_entropy - INFO -   Results: accuracy=0.1644, precision=0.1500, recall=0.4233, bound=7.0000
+2025-04-24 00:48:10,839 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:48:10,845 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:48:10,860 - experiments.schema_entropy - INFO -   Results: accuracy=0.1721, precision=0.1375, recall=0.4067, bound=8.0000
+2025-04-24 00:48:10,860 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:48:10,870 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:48:10,888 - experiments.schema_entropy - INFO -   Results: accuracy=0.1617, precision=0.1350, recall=0.3767, bound=8.0000
+2025-04-24 00:48:10,888 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:48:10,907 - pipeline.database_encoder - INFO - Encoded database with 4 tables
+2025-04-24 00:48:10,933 - experiments.schema_entropy - INFO -   Results: accuracy=0.1204, precision=0.0975, recall=0.2850, bound=8.0000
+2025-04-24 00:48:10,933 - experiments.schema_entropy - INFO - Testing schema with entropy=10.0 bits
+2025-04-24 00:48:10,933 - data.schema_generator - INFO - Generated schema with target entropy 10.0 bits, achieved 9.30 bits
+2025-04-24 00:48:10,952 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 00:48:11,015 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 00:48:11,078 - data.db_generator - INFO - Generated 1000 rows for table 'table_2'
+2025-04-24 00:48:11,139 - data.db_generator - INFO - Generated 1000 rows for table 'table_3'
+2025-04-24 00:48:11,198 - data.db_generator - INFO - Generated 1000 rows for table 'table_4'
+2025-04-24 00:48:11,206 - data.query_generator - INFO - Generated 200 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 00:48:11,207 - experiments.schema_entropy - INFO -   Testing with embedding_dim=64
+2025-04-24 00:48:11,210 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:48:11,224 - experiments.schema_entropy - INFO -   Results: accuracy=0.0802, precision=0.0775, recall=0.2133, bound=6.0000
+2025-04-24 00:48:11,224 - experiments.schema_entropy - INFO -   Testing with embedding_dim=128
+2025-04-24 00:48:11,228 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:48:11,243 - experiments.schema_entropy - INFO -   Results: accuracy=0.1077, precision=0.0975, recall=0.2333, bound=7.0000
+2025-04-24 00:48:11,243 - experiments.schema_entropy - INFO -   Testing with embedding_dim=256
+2025-04-24 00:48:11,249 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:48:11,265 - experiments.schema_entropy - INFO -   Results: accuracy=0.1196, precision=0.1075, recall=0.2883, bound=8.0000
+2025-04-24 00:48:11,265 - experiments.schema_entropy - INFO -   Testing with embedding_dim=512
+2025-04-24 00:48:11,276 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:48:11,295 - experiments.schema_entropy - INFO -   Results: accuracy=0.1278, precision=0.1075, recall=0.2967, bound=9.0000
+2025-04-24 00:48:11,295 - experiments.schema_entropy - INFO -   Testing with embedding_dim=1024
+2025-04-24 00:48:11,315 - pipeline.database_encoder - INFO - Encoded database with 5 tables
+2025-04-24 00:48:11,341 - experiments.schema_entropy - INFO -   Results: accuracy=0.1311, precision=0.1100, recall=0.3083, bound=10.0000
+2025-04-24 00:48:11,344 - experiments.schema_entropy - INFO - Schema entropy experiment completed
+2025-04-24 00:48:11,345 - experiments.schema_entropy - INFO - Results saved to ./results/schema_entropy.json
+2025-04-24 00:48:11,345 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:48:12,844 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:48:13,306 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:48:14,413 - experiments.experiment_runner - INFO - Generated error propagation figure: ./figures/error_propagation.png
+2025-04-24 00:48:15,460 - experiments.experiment_runner - INFO - Generated schema entropy figure: ./figures/schema_entropy.png
+2025-04-24 00:48:15,460 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:48:15,461 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:48:15,470 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:48:15,474 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:48:15,481 - experiments.experiment_runner - INFO - Generated error propagation tables: ./tables/error_single_channel.csv
+2025-04-24 00:48:28,483 - experiments.experiment_runner - INFO - Generated schema entropy table: ./tables/schema_entropy.csv
+2025-04-24 00:48:28,484 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 00:48:28,484 - experiments.experiment_runner - INFO - Generating figures
+2025-04-24 00:48:29,989 - experiments.experiment_runner - INFO - Generated channel capacity figure: ./figures/channel_capacity.png
+2025-04-24 00:48:30,418 - experiments.experiment_runner - INFO - Generated bottleneck analysis figure: ./figures/bottleneck_analysis.png
+2025-04-24 00:48:31,226 - experiments.experiment_runner - INFO - Generated error propagation figure: ./figures/error_propagation.png
+2025-04-24 00:48:32,420 - experiments.experiment_runner - INFO - Generated schema entropy figure: ./figures/schema_entropy.png
+2025-04-24 00:48:32,420 - experiments.experiment_runner - INFO - Figure generation completed
+2025-04-24 00:48:32,420 - experiments.experiment_runner - INFO - Generating tables
+2025-04-24 00:48:32,430 - experiments.experiment_runner - INFO - Generated channel capacity table: ./tables/channel_capacity.csv
+2025-04-24 00:48:32,435 - experiments.experiment_runner - INFO - Generated bottleneck analysis table: ./tables/bottleneck_analysis.csv
+2025-04-24 00:48:32,442 - experiments.experiment_runner - INFO - Generated error propagation tables: ./tables/error_single_channel.csv
+2025-04-24 00:48:32,455 - experiments.experiment_runner - INFO - Generated schema entropy table: ./tables/schema_entropy.csv
+2025-04-24 00:48:32,456 - experiments.experiment_runner - INFO - Table generation completed
+2025-04-24 10:59:34,478 - experiments.experiment_runner - INFO - Experiment runner initialized with output directory: .
+2025-04-24 10:59:34,479 - experiments.experiment_runner - INFO - Running all experiments
+2025-04-24 10:59:34,479 - experiments.channel_capacity - INFO - Starting channel capacity experiment
+2025-04-24 10:59:34,480 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 10:59:34,502 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 10:59:34,587 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 10:59:34,600 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 10:59:34,600 - experiments.channel_capacity - INFO - Measuring C₁: Query Encoding Channel capacity
+2025-04-24 10:59:34,691 - experiments.channel_capacity - INFO - C1 capacity with dim=64: 2.0789 bits
+2025-04-24 10:59:34,702 - experiments.channel_capacity - INFO - C1 capacity with dim=128: 2.0496 bits
+2025-04-24 10:59:34,716 - experiments.channel_capacity - INFO - C1 capacity with dim=256: 2.0109 bits
+2025-04-24 12:12:47,993 - experiments.experiment_runner - INFO - Experiment runner initialized with output directory: .
+2025-04-24 12:12:47,994 - experiments.experiment_runner - INFO - Running all experiments
+2025-04-24 12:12:47,994 - experiments.channel_capacity - INFO - Starting channel capacity experiment
+2025-04-24 12:12:47,995 - data.schema_generator - INFO - Generated schema with target entropy 5.0 bits, achieved 6.04 bits
+2025-04-24 12:12:48,022 - data.db_generator - INFO - Generated 1000 rows for table 'table_0'
+2025-04-24 12:12:48,124 - data.db_generator - INFO - Generated 1000 rows for table 'table_1'
+2025-04-24 12:12:48,147 - data.query_generator - INFO - Generated 500 queries with ambiguity levels [0.1, 0.3, 0.5, 0.7, 0.9]
+2025-04-24 12:13:42,752 - experiments.channel_capacity - INFO - Measuring C₁: Query Encoding Channel capacity
+2025-04-24 12:13:42,822 - experiments.channel_capacity - INFO - C1 capacity with dim=64: 2.0789 bits
+2025-04-24 12:13:42,840 - experiments.channel_capacity - INFO - C1 capacity with dim=128: 2.0496 bits
+2025-04-24 12:13:42,861 - experiments.channel_capacity - INFO - C1 capacity with dim=256: 2.0109 bits
+2025-04-24 12:13:42,887 - experiments.channel_capacity - INFO - C1 capacity with dim=512: 1.8935 bits
+2025-04-24 12:13:42,924 - experiments.channel_capacity - INFO - C1 capacity with dim=1024: 1.7713 bits

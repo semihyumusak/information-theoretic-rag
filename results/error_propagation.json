@@ -1,0 +1,170 @@
+[
+  {
+    "channel": "C1",
+    "error_level": 0.1,
+    "accuracy": 0.5128700629582892,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.03050959825438221,
+    "error_type": "single"
+  },
+  {
+    "channel": "C1",
+    "error_level": 0.2,
+    "accuracy": 0.5919512533413664,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.10959078863745947,
+    "error_type": "single"
+  },
+  {
+    "channel": "C1",
+    "error_level": 0.3,
+    "accuracy": 0.6079457995709753,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.1255853348670683,
+    "error_type": "single"
+  },
+  {
+    "channel": "C2",
+    "error_level": 0.1,
+    "accuracy": 0.414004034875307,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.06835642982859996,
+    "error_type": "single"
+  },
+  {
+    "channel": "C2",
+    "error_level": 0.2,
+    "accuracy": 0.3025446091020042,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.17981585560190277,
+    "error_type": "single"
+  },
+  {
+    "channel": "C2",
+    "error_level": 0.3,
+    "accuracy": 0.22773400077544148,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.2546264639284655,
+    "error_type": "single"
+  },
+  {
+    "channel": "C3",
+    "error_level": 0.1,
+    "accuracy": 0.48198979665149616,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.00037066805241081635,
+    "error_type": "single"
+  },
+  {
+    "channel": "C3",
+    "error_level": 0.2,
+    "accuracy": 0.48272172185899254,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.0003612571550855592,
+    "error_type": "single"
+  },
+  {
+    "channel": "C3",
+    "error_level": 0.3,
+    "accuracy": 0.4840462108757489,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.0016857461718419176,
+    "error_type": "single"
+  },
+  {
+    "channel": "C4",
+    "error_level": 0.1,
+    "accuracy": 0.4400381469338553,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.04232231777005169,
+    "error_type": "single"
+  },
+  {
+    "channel": "C4",
+    "error_level": 0.2,
+    "accuracy": 0.3973219355389539,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.08503852916495308,
+    "error_type": "single"
+  },
+  {
+    "channel": "C4",
+    "error_level": 0.3,
+    "accuracy": 0.352130952049855,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.13022951265405197,
+    "error_type": "single"
+  },
+  {
+    "channels": "C1+C2",
+    "error_level": 0.2,
+    "accuracy": 0.42415919540453273,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.05820126929937425,
+    "ch1_drop": -0.10959078863745947,
+    "ch2_drop": 0.17981585560190277,
+    "expected_drop": 0.0702250669644433,
+    "interaction_effect": -0.012023797665069058,
+    "error_type": "multi"
+  },
+  {
+    "channels": "C1+C3",
+    "error_level": 0.2,
+    "accuracy": 0.5903262965245635,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.1079658318206565,
+    "ch1_drop": -0.10959078863745947,
+    "ch2_drop": -0.0003612571550855592,
+    "expected_drop": -0.10995204579254503,
+    "interaction_effect": 0.0019862139718885286,
+    "error_type": "multi"
+  },
+  {
+    "channels": "C1+C4",
+    "error_level": 0.2,
+    "accuracy": 0.48477725960730794,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": -0.002416794903400965,
+    "ch1_drop": -0.10959078863745947,
+    "ch2_drop": 0.08503852916495308,
+    "expected_drop": -0.024552259472506388,
+    "interaction_effect": 0.022135464569105423,
+    "error_type": "multi"
+  },
+  {
+    "channels": "C2+C3",
+    "error_level": 0.2,
+    "accuracy": 0.30249310694953824,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.17986735775436874,
+    "ch1_drop": 0.17981585560190277,
+    "ch2_drop": -0.0003612571550855592,
+    "expected_drop": 0.17945459844681722,
+    "interaction_effect": 0.00041275930755152457,
+    "error_type": "multi"
+  },
+  {
+    "channels": "C2+C4",
+    "error_level": 0.2,
+    "accuracy": 0.24676876244142762,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.23559170226247936,
+    "ch1_drop": 0.17981585560190277,
+    "ch2_drop": 0.08503852916495308,
+    "expected_drop": 0.26485438476685585,
+    "interaction_effect": -0.029262682504376497,
+    "error_type": "multi"
+  },
+  {
+    "channels": "C3+C4",
+    "error_level": 0.2,
+    "accuracy": 0.3973219355389539,
+    "baseline_accuracy": 0.482360464703907,
+    "accuracy_drop": 0.08503852916495308,
+    "ch1_drop": -0.0003612571550855592,
+    "ch2_drop": 0.08503852916495308,
+    "expected_drop": 0.08467727200986752,
+    "interaction_effect": 0.0003612571550855592,
+    "error_type": "multi"
+  }
+]

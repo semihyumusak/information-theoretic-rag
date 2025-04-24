@@ -1,0 +1,102 @@
+[
+  {
+    "embedding_dim": 64,
+    "mutual_information": 2.0789327649265497,
+    "channel": "C1"
+  },
+  {
+    "embedding_dim": 128,
+    "mutual_information": 2.0496448959923477,
+    "channel": "C1"
+  },
+  {
+    "embedding_dim": 256,
+    "mutual_information": 2.010874426556488,
+    "channel": "C1"
+  },
+  {
+    "embedding_dim": 512,
+    "mutual_information": 1.77435793122072,
+    "channel": "C1"
+  },
+  {
+    "embedding_dim": 1024,
+    "mutual_information": 1.7984918272643062,
+    "channel": "C1"
+  },
+  {
+    "context_size": 2,
+    "mutual_information": 1.8635579776957087,
+    "channel": "C2"
+  },
+  {
+    "context_size": 4,
+    "mutual_information": 1.837817197347914,
+    "channel": "C2"
+  },
+  {
+    "context_size": 8,
+    "mutual_information": 1.8698635289596248,
+    "channel": "C2"
+  },
+  {
+    "context_size": 16,
+    "mutual_information": 1.6188239486359233,
+    "channel": "C2"
+  },
+  {
+    "context_size": 32,
+    "mutual_information": 1.7252059480595132,
+    "channel": "C2"
+  },
+  {
+    "context_size": 2,
+    "mutual_information": 1.5352857114790843,
+    "channel": "C3"
+  },
+  {
+    "context_size": 4,
+    "mutual_information": 1.6793581138225282,
+    "channel": "C3"
+  },
+  {
+    "context_size": 8,
+    "mutual_information": 1.4101857655086432,
+    "channel": "C3"
+  },
+  {
+    "context_size": 16,
+    "mutual_information": 1.468352710462109,
+    "channel": "C3"
+  },
+  {
+    "context_size": 32,
+    "mutual_information": 1.550209813669036,
+    "channel": "C3"
+  },
+  {
+    "temperature": 0.1,
+    "mutual_information": 1.2328830682670782,
+    "channel": "C4"
+  },
+  {
+    "temperature": 0.3,
+    "mutual_information": 1.4514007044204695,
+    "channel": "C4"
+  },
+  {
+    "temperature": 0.5,
+    "mutual_information": 1.9381182496888754,
+    "channel": "C4"
+  },
+  {
+    "temperature": 0.7,
+    "mutual_information": 1.7316117114389757,
+    "channel": "C4"
+  },
+  {
+    "temperature": 0.9,
+    "mutual_information": 1.6184061955210463,
+    "channel": "C4"
+  }
+]

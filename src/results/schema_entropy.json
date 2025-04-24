@@ -1,0 +1,202 @@
+[
+  {
+    "schema_entropy": 2.0,
+    "embedding_dim": 64,
+    "accuracy": 0.37223812858877153,
+    "precision": 0.40333333333333327,
+    "recall": 0.94,
+    "theoretical_bound": 2.0
+  },
+  {
+    "schema_entropy": 2.0,
+    "embedding_dim": 128,
+    "accuracy": 0.37223812858877153,
+    "precision": 0.40333333333333327,
+    "recall": 0.94,
+    "theoretical_bound": 2.0
+  },
+  {
+    "schema_entropy": 2.0,
+    "embedding_dim": 256,
+    "accuracy": 0.37223812858877153,
+    "precision": 0.40333333333333327,
+    "recall": 0.94,
+    "theoretical_bound": 2.0
+  },
+  {
+    "schema_entropy": 2.0,
+    "embedding_dim": 512,
+    "accuracy": 0.37223812858877153,
+    "precision": 0.40333333333333327,
+    "recall": 0.94,
+    "theoretical_bound": 2.0
+  },
+  {
+    "schema_entropy": 2.0,
+    "embedding_dim": 1024,
+    "accuracy": 0.37223812858877153,
+    "precision": 0.40333333333333327,
+    "recall": 0.94,
+    "theoretical_bound": 2.0
+  },
+  {
+    "schema_entropy": 4.0,
+    "embedding_dim": 64,
+    "accuracy": 0.20443985633549444,
+    "precision": 0.2625,
+    "recall": 0.6083333333333333,
+    "theoretical_bound": 4.0
+  },
+  {
+    "schema_entropy": 4.0,
+    "embedding_dim": 128,
+    "accuracy": 0.276356635115864,
+    "precision": 0.2775,
+    "recall": 0.6883333333333332,
+    "theoretical_bound": 4.0
+  },
+  {
+    "schema_entropy": 4.0,
+    "embedding_dim": 256,
+    "accuracy": 0.26830797285716235,
+    "precision": 0.2925,
+    "recall": 0.7049999999999998,
+    "theoretical_bound": 4.0
+  },
+  {
+    "schema_entropy": 4.0,
+    "embedding_dim": 512,
+    "accuracy": 0.25280478711096405,
+    "precision": 0.2775,
+    "recall": 0.6483333333333334,
+    "theoretical_bound": 4.0
+  },
+  {
+    "schema_entropy": 4.0,
+    "embedding_dim": 1024,
+    "accuracy": 0.24669398899276826,
+    "precision": 0.275,
+    "recall": 0.645,
+    "theoretical_bound": 4.0
+  },
+  {
+    "schema_entropy": 6.0,
+    "embedding_dim": 64,
+    "accuracy": 0.21955020705955655,
+    "precision": 0.18,
+    "recall": 0.515,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 6.0,
+    "embedding_dim": 128,
+    "accuracy": 0.1691708062735027,
+    "precision": 0.16,
+    "recall": 0.46166666666666667,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 6.0,
+    "embedding_dim": 256,
+    "accuracy": 0.222067088850178,
+    "precision": 0.1725,
+    "recall": 0.4883333333333333,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 6.0,
+    "embedding_dim": 512,
+    "accuracy": 0.22780224905702492,
+    "precision": 0.18,
+    "recall": 0.5616666666666668,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 6.0,
+    "embedding_dim": 1024,
+    "accuracy": 0.21979317979062116,
+    "precision": 0.1725,
+    "recall": 0.5116666666666666,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 8.0,
+    "embedding_dim": 64,
+    "accuracy": 0.1728759620564472,
+    "precision": 0.1575,
+    "recall": 0.445,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 8.0,
+    "embedding_dim": 128,
+    "accuracy": 0.16436952760641485,
+    "precision": 0.15,
+    "recall": 0.4233333333333333,
+    "theoretical_bound": 7.0
+  },
+  {
+    "schema_entropy": 8.0,
+    "embedding_dim": 256,
+    "accuracy": 0.17212504620764169,
+    "precision": 0.1375,
+    "recall": 0.4066666666666666,
+    "theoretical_bound": 8.0
+  },
+  {
+    "schema_entropy": 8.0,
+    "embedding_dim": 512,
+    "accuracy": 0.16169869667267736,
+    "precision": 0.135,
+    "recall": 0.37666666666666665,
+    "theoretical_bound": 8.0
+  },
+  {
+    "schema_entropy": 8.0,
+    "embedding_dim": 1024,
+    "accuracy": 0.12044804360236963,
+    "precision": 0.0975,
+    "recall": 0.285,
+    "theoretical_bound": 8.0
+  },
+  {
+    "schema_entropy": 10.0,
+    "embedding_dim": 64,
+    "accuracy": 0.08019408284297659,
+    "precision": 0.0775,
+    "recall": 0.21333333333333332,
+    "theoretical_bound": 6.0
+  },
+  {
+    "schema_entropy": 10.0,
+    "embedding_dim": 128,
+    "accuracy": 0.10766506091070227,
+    "precision": 0.0975,
+    "recall": 0.2333333333333333,
+    "theoretical_bound": 7.0
+  },
+  {
+    "schema_entropy": 10.0,
+    "embedding_dim": 256,
+    "accuracy": 0.11961231245775139,
+    "precision": 0.1075,
+    "recall": 0.28833333333333333,
+    "theoretical_bound": 8.0
+  },
+  {
+    "schema_entropy": 10.0,
+    "embedding_dim": 512,
+    "accuracy": 0.12779411867593704,
+    "precision": 0.1075,
+    "recall": 0.29666666666666663,
+    "theoretical_bound": 9.0
+  },
+  {
+    "schema_entropy": 10.0,
+    "embedding_dim": 1024,
+    "accuracy": 0.13110076102594972,
+    "precision": 0.11,
+    "recall": 0.3083333333333333,
+    "theoretical_bound": 10.0
+  }
+]

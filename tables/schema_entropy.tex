@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Effect of Schema Entropy on RAG Performance}
+\label{tab:schema_entropy}
+\begin{tabular}{cccccc}
+\toprule
+Schema & \multicolumn{2}{c}{Dim = 128} & \multicolumn{2}{c}{Dim = 512} \\
+Entropy (bits) & Recall & Bound & Recall & Bound \\
+\midrule
+2.0 & 0.940 & 2.000 & 0.940 & 2.000 \\
+4.0 & 0.688 & 4.000 & 0.648 & 4.000 \\
+6.0 & 0.462 & 6.000 & 0.562 & 6.000 \\
+8.0 & 0.423 & 7.000 & 0.377 & 8.000 \\
+10.0 & 0.233 & 7.000 & 0.297 & 9.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

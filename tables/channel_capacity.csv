@@ -1,0 +1,21 @@
+Channel,Parameter,Parameter Value,Capacity (bits)
+C1: Query Encoding,Embedding Dimension,64.0,2.08
+C1: Query Encoding,Embedding Dimension,128.0,2.05
+C1: Query Encoding,Embedding Dimension,256.0,2.01
+C1: Query Encoding,Embedding Dimension,512.0,1.87
+C1: Query Encoding,Embedding Dimension,1024.0,1.79
+C2: Retrieval,Context Size,2.0,1.86
+C2: Retrieval,Context Size,4.0,1.84
+C2: Retrieval,Context Size,8.0,1.87
+C2: Retrieval,Context Size,16.0,1.62
+C2: Retrieval,Context Size,32.0,1.73
+C3: Context Integration,Context Size,2.0,1.54
+C3: Context Integration,Context Size,4.0,1.68
+C3: Context Integration,Context Size,8.0,1.41
+C3: Context Integration,Context Size,16.0,1.47
+C3: Context Integration,Context Size,32.0,1.55
+C4: Generation,Temperature,0.1,1.23
+C4: Generation,Temperature,0.3,1.45
+C4: Generation,Temperature,0.5,1.94
+C4: Generation,Temperature,0.7,1.73
+C4: Generation,Temperature,0.9,1.62
