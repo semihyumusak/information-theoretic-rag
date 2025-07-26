@@ -12,6 +12,8 @@ import argparse
 import logging
 from typing import Optional
 
+from src.experiments.enhanced_experiment_runner import EnhancedExperimentRunner
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -45,8 +47,8 @@ def main() -> None:
     os.makedirs(args.output_dir, exist_ok=True)
 
     # Initialize experiment runner
-    runner = ExperimentRunner(output_dir=args.output_dir)
-
+    #runner = ExperimentRunner(output_dir=args.output_dir)
+    runner = EnhancedExperimentRunner(n_runs=10)
     # Load existing results if only generating figures
     if args.figures_only:
         logger.info("Loading existing results to generate figures")

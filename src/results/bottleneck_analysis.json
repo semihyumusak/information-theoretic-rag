@@ -2,57 +2,97 @@
   {
     "channel": "C1",
     "improvement_factor": 1.5,
-    "accuracy": 0.20939233767854454,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": -2.3117249518314513
+    "improvement_percent": 2.7235814903852518,
+    "improvement_percent_std": 5.475408094184187,
+    "improvement_percent_ci_lower": -4.30336411725971,
+    "improvement_percent_ci_upper": 11.85991760339097,
+    "p_value": 0.15286691849781212,
+    "significant": false,
+    "effect_size": 0.04434871769408799,
+    "n_runs": 10
   },
   {
     "channel": "C1",
     "improvement_factor": 2.0,
-    "accuracy": 0.21320616451516744,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": -0.5324517982260804
+    "improvement_percent": 3.558735850445933,
+    "improvement_percent_std": 7.5516068347044625,
+    "improvement_percent_ci_lower": -6.954260591617288,
+    "improvement_percent_ci_upper": 15.06289076679681,
+    "p_value": 0.09224731456093184,
+    "significant": false,
+    "effect_size": 0.05250398162767105,
+    "n_runs": 10
   },
   {
     "channel": "C2",
     "improvement_factor": 1.5,
-    "accuracy": 0.3383586128310459,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 57.855199486331735
+    "improvement_percent": 55.949941670578184,
+    "improvement_percent_std": 13.268137160789857,
+    "improvement_percent_ci_lower": 37.17786185654679,
+    "improvement_percent_ci_upper": 74.76737174742607,
+    "p_value": 6.2804498213588615e-167,
+    "significant": true,
+    "effect_size": 1.0595991413514168,
+    "n_runs": 10
   },
   {
     "channel": "C2",
     "improvement_factor": 2.0,
-    "accuracy": 0.3956036040289085,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 84.56183310657327
+    "improvement_percent": 81.38149613950974,
+    "improvement_percent_std": 15.857800725465571,
+    "improvement_percent_ci_lower": 63.847973479712245,
+    "improvement_percent_ci_upper": 109.84963705405363,
+    "p_value": 0.0,
+    "significant": true,
+    "effect_size": 2.453657501872032,
+    "n_runs": 10
   },
   {
     "channel": "C3",
     "improvement_factor": 1.5,
-    "accuracy": 0.23561177010383375,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 9.920485427808284
+    "improvement_percent": 4.935380854109942,
+    "improvement_percent_std": 8.956457065263848,
+    "improvement_percent_ci_lower": -9.86937571184056,
+    "improvement_percent_ci_upper": 16.54423916686513,
+    "p_value": 0.021554893705466087,
+    "significant": true,
+    "effect_size": 0.071954788009412,
+    "n_runs": 10
   },
   {
     "channel": "C3",
     "improvement_factor": 2.0,
-    "accuracy": 0.23372767949278067,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 9.041496426258568
+    "improvement_percent": 4.605021931210052,
+    "improvement_percent_std": 10.343713334969577,
+    "improvement_percent_ci_lower": -7.579475431313252,
+    "improvement_percent_ci_upper": 22.886002492347785,
+    "p_value": 0.03540049151247749,
+    "significant": true,
+    "effect_size": 0.06607217282212026,
+    "n_runs": 10
   },
   {
     "channel": "C4",
     "improvement_factor": 1.5,
-    "accuracy": 0.33921376313637713,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 58.2541546685551
+    "improvement_percent": 62.07688600076997,
+    "improvement_percent_std": 9.016431590140213,
+    "improvement_percent_ci_lower": 49.24433455004052,
+    "improvement_percent_ci_upper": 74.86493992088553,
+    "p_value": 1.3058837910895664e-76,
+    "significant": true,
+    "effect_size": 0.6332004866894362,
+    "n_runs": 10
   },
   {
     "channel": "C4",
     "improvement_factor": 2.0,
-    "accuracy": 0.4504072457043858,
-    "baseline_accuracy": 0.21434746142799274,
-    "improvement_percent": 110.12949848052867
+    "improvement_percent": 98.01225282396803,
+    "improvement_percent_std": 20.640997101877257,
+    "improvement_percent_ci_lower": 70.754863661556,
+    "improvement_percent_ci_upper": 131.22904286783904,
+    "p_value": 3.115561613276633e-125,
+    "significant": true,
+    "effect_size": 0.868904476093615,
+    "n_runs": 10
   }
 ]
